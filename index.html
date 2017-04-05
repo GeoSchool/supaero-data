@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>GéoSupaero • Data </title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2FyYWhtYW15IiwiYSI6ImNpeXVtdjF4aTAwMWgycXFpNXVhenM5bXMifQ.VW5Hbb-RhpFzUnZqKZR69Q';
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/sarahmamy/cj15b8a7f002u2so8qjv0yuk1', //stylesheet location
+    center: [0, 40], // starting position
+    zoom: 3 // starting zoom
+});
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+</script>
+
+</body>
+</html>
