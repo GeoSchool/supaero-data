@@ -1,3 +1,13 @@
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%; }
+
 .mapbox-improve-map {
     display: none;
+}
+
+.logo-corner {
+    position: absolute;
+    bottom: 25px;
+    height: 30px;
+    right: 5px;
 }

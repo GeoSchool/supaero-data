@@ -3,18 +3,36 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>GéoSupaero • Data </title>
+    <title>GéoSupaero • Flux migratoires</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
-    </style>
 </head>
 <body>
+  <h1>Les flux migratoires des Supaériens sur une carte</h1>
+  <h2>A propos</h2>
+    <p>
+
+      Ce site a été réalisé avec les données de <strong>GéoSupaero, la carte des
+      étudiants et diplômés de l'ISAE-Supaero</strong>. Chaque déplacement en stage,
+      double-diplôme ou emploi est représenté par un arc, partant du campus de l'ISAE-Supaero.
+
+    </p>
+    <h2>Nous contacter</h2>
+      <p>
+        Pour accéder à GéoSupaero, <a href="https://supaero.geoschool.fr/"
+        title="Accéder à GéoSupero / GeoSupaero, la carte des
+        Supaeériens">https://supaero.geoschool.fr</a>. Attention, réservé aux
+        étudiants et diplômés de l'ISAE-Supaero.
+      </p>
+      <p>
+        Si vous êtes intéressés pour en savoir plus sur le projet ou si vous
+        avez des questions, n'hésitez pas à <a
+        href="https://supaero.geoschool.fr/contactus/">nous contacter via
+        GéoSupaero</a>.
+      </p>
 
 <div id='map'></div>
 <script>
@@ -28,6 +46,10 @@ var map = new mapboxgl.Map({
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
 </script>
+
+<a href="https://supaero.geoschool.fr/" title="Accéder à GéoSupero / GeoSupaero, la carte des Supaeériens">
+  <img class="logo-corner" src="./logo-flat-grey.png" alt="Logo GéoSupaero / GeoSupaero" title="Ce site a été réalisé avec les données de GéoSupaero.">
+</a>
 
 </body>
 </html>
